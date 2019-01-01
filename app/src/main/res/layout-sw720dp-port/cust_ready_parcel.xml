@@ -74,7 +74,7 @@
             android:visibility="gone"/>
 
 
-        <com.inerun.dropinsta.fontlib.CustomFontButton
+        <com.inerun.courier.fontlib.CustomFontButton
             android:id="@+id/delivery_button"
             style="@style/button_view_style"
             android:layout_width="fill_parent"

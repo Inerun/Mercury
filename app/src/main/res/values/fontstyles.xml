@@ -52,6 +52,12 @@
         <item name="android:textColor">@color/textColor</item>
     </style>
 
+
+    <style name="fontawesome_text_view_style_white">
+        <item name="textviewfontName">fontawesome.ttf</item>
+        <item name="android:textColor">@color/textcolor_heading2_white_80</item>
+    </style>
+
     <!--<style name="desc_text_view_style.regular">-->
         <!--<item name="textviewfontName">titillium_regular.ttf</item>-->
         <!--<item name="android:lineSpacingExtra">5sp</item>-->

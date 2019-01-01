@@ -42,7 +42,7 @@
                 android:background="@color/darkGray" />
 
 
-            <com.inerun.dropinsta.fontlib.CustomFontEditText
+            <com.inerun.courier.fontlib.CustomFontEditText
                 app:met_floatingLabel="highlight"
                 android:id="@+id/delivery_comment"
                 style="@style/desc_edittext_view_style"

@@ -1,7 +1,9 @@
 <resources>
     <!--<string name="app_name">Tigmoo ShopNShip</string>-->
     <!--<string name="app_name">SNS OLD</string>-->
-    <string name="app_name">SNS NEW</string>
+    <!--<string name="app_name">SNS NEW</string>-->
+    <!--<string name="app_name">Mercury Express Logistics</string>-->
+    <string name="app_name">Mercury</string>
     <string name="action_settings">Settings</string>
     <string name="action_refresh">Refresh</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -24,8 +26,8 @@
     <string name="parcel_customer_name">Name: %1$s</string>
     <string name="parcel_customer_id">Cust id: %1$s</string>
     <string name="parcel_customer_address">Add: %1$s</string>
-    <string name="payment_collection_cash">CASH \n %1$s</string>
-    <string name="payment_collection_card">CARD SWIPE \n %1$s</string>
+    <string name="payment_collection_cash">CASH \n%1$s</string>
+    <string name="payment_collection_card">CARD SWIPE \n%1$s</string>
     <string name="title_customer_search">Customer Search</string>
     <string name="title_delivery_payment">Delivery Payment</string>
     <string name="title_allparcels">Pending/Delivered</string>
@@ -39,6 +41,468 @@
     <string name="invoices">Invoices</string>
     <string name="payment">Payment</string>
     <string name="logout_success">You have been Logout Successfully!!</string>
+    <string name="sweet_alert_warning_title">Warning !!</string>
+    <string name="service_progressdialog_title">Loading...</string>
+    <string name="sweet_alert_error_title">Oops...</string>
+    <string name="default_auction_title">Auction</string>
+    <string name="navigation_settings">Settings</string>
+    <string name="navigation_start_sync">Start Sync</string>
+    <string name="navigation_header_device">Device #%1$s</string>
+    <string name="navigation_header_company">Tigmoo ShopNShip</string>
+    <string name="navigation_pateint_order">Patient Order</string>
+    <string name="navigation_location">Locations</string>
+    <string name="device_name">Device Name</string>
+    <string name="printer">Printer</string>
+    <string name="print">Print</string>
+    <string name="printer_address">Printer Address</string>
+    <string name="touch_to_scan">Touch to Scan</string>
+    <string name="save">Save</string>
+    <string name="btn_restart">Restart</string>
+    <string name="title_printerlist">Printer List</string>
+    <string name="printer_logs">Printer logs</string>
+    <string name="title_target">Target</string>
+    <string name="settings_saved">Settings saved</string>
+    <string name="title_err_code">Error Code</string>
+    <string name="title_err_method">Method</string>
+    <string name="title_err">Error</string>
+    <string name="title_msg_result">Result</string>
+    <string name="title_msg_description">Description</string>
+    <string name="drawer_2pin">2 Pin</string>
+    <string name="drawer_5pin">5 Pin</string>
+    <string name="drawer_high">High</string>
+    <string name="drawer_low">Low</string>
+    <string name="pos_live">Kasse 1</string>
+    <string name="printerseries_m10">TM-m10 Series</string>
+    <string name="printerseries_m30">TM-m30 Series</string>
+    <string name="printerseries_p20">TM-P20 Series</string>
+    <string name="printerseries_p60">TM-P60 Series</string>
+    <string name="printerseries_p60ii">TM-P60II Series</string>
+    <string name="printerseries_p80">TM-P80 Series</string>
+    <string name="printerseries_t20">TM-T20 Series</string>
+    <string name="printerseries_t70">TM-T70 Series</string>
+    <string name="printerseries_t81">TM-T81 Series</string>
+    <string name="printerseries_t82">TM-T82 Series</string>
+    <string name="printerseries_t83">TM-T83 Series</string>
+    <string name="printerseries_t88">TM-T88 Series</string>
+    <string name="printerseries_t90">TM-T90 Series</string>
+    <string name="printerseries_t90kp">TM-T90KP Series</string>
+    <string name="printerseries_u220">TM-U220 Series</string>
+    <string name="printerseries_u330">TM-U330 Series</string>
+    <string name="printerseries_l90">TM-L90 Series</string>
+    <string name="printerseries_h6000">TM-H6000 Series</string>
+    <string name="lang_ank">ANK</string>
+    <string name="lang_japanese">JAPANESE</string>
+    <string name="lang_chinese">CHINESE</string>
+    <string name="lang_taiwan">TAIWAN</string>
+    <string name="lang_korean">KOREAN</string>
+    <string name="lang_thai">THAI</string>
+    <string name="lang_southasia">SOUTH ASIA</string>
 
 
+    <string name="dialog_printer_settings_error_msg">Printer Settings are not Correct!! please provide correct and fill values</string>
+    <string name="dialog_webview_null_error_msg">Webview Instance is null Please restart the app?</string>
+    <string name="dialog_permission_denied_error_msg">App need these permissions to work normally? Please Restart app and provide permissions.</string>
+    <string name="dialog_ftp_url_error_msg">Ftp Url either invalid or empty?</string>
+    <string name="dialog_reader_settings_error_msg">NFC nicht verbunden...Jetzt einstellen?</string>
+    <string name="dialog_pos_settings_error_msg">Kasse nicht verbunden...Jetzt einstellen?</string>
+    <string name="dialog_reader_retry_msg">NFC nicht verbunden. Noch mal versuchen ?</string>
+    <string name="reader_response_fail">Karte nicht lesbar</string>
+    <string name="dialog_pooling_not_stopped">Polling is Enabled. do you want to stop polling and Try Again?</string>
+    <string name="printer_disabled">Drucker ist deaktiviert.</string>
+
+
+    <string name="space1">&#160;</string>
+    <string name="space2">&#160;&#160;</string>
+    <string name="space3">&#160;&#160;&#160;</string>
+    <string name="space4">&#160;&#160;&#160;&#160;</string>
+    <string name="space5">&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space6">&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space7">&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space8">&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space9">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space10">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space11">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space12">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space13">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space14">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space15">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space16">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space17">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space18">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space19">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space20">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space21">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space22">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space23">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space24">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space26">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space27">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space28">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space29">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="space30">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="line">------------------------------\n</string>
+    <string name="qty">Item ID</string>
+    <string name="euro">&#8364;&#160;</string>
+    <string name="zmw">K</string>
+    <string name="euro_without_space">&#8364;</string>
+    <string name="black_star">&#9733;</string>
+    <string name="white_star">&#9734;</string>
+    <string name="vertical_bar">&#124;</string>
+    <string name="positive">+</string>
+    <string name="negative">-</string>
+
+    <string name="desc">Description</string>
+
+
+
+
+
+    <!-- Activity -->
+    <string name="apdu_command">APDU command</string>
+    <string name="atr">ATR</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="authentication_key">Authentication Key</string>
+    <string name="battery_service">Battery service</string>
+    <string name="battery_level">Battery level: </string>
+    <string name="battery_status">Battery status: </string>
+    <string name="card_reader_not_ready">NFC ist ausgeschaltet</string>
+    <string name="invalid_instance">Invalid instance</string>
+    <string name="invalid_amt">Amount cannot be Empty</string>
+    <string name="invalid_amt_error">Amount is either null or invalid</string>
+    <string name="invalid_printerjson_error">Invalid Json, Unable to print. Please try again later</string>
+    <string name="invalid_formatcard_error">Json Error Occured,Unable to Format Card</string>
+    <string name="invalid_readcard_error">Json Error Occured,Unable to Read Card</string>
+    <string name="invalid_writecard_error">Json Error Occured,Unable to Write Card</string>
+    <string name="invalid_blockcard_error">Json Error Occured,Unable to Block Card</string>
+    <string name="invalid_unblockcard_error">Json Error Occured,Unable to Unblock Card</string>
+    <string name="card_status_2">Card status: </string>
+    <string name="clear">Clear</string>
+    <string name="connection_status">Connection status: </string>
+    <string name="device_info">Device Info</string>
+    <string name="escape_command">Escape command</string>
+    <string name="fw_revision">FW revision: </string>
+    <string name="hw_revision">HW revision: </string>
+    <string name="get_battery_level">Get Battery Level</string>
+    <string name="get_battery_status">Get Battery Status</string>
+    <string name="get_device_info">Get Device Info</string>
+    <string name="get_card_status">Get Card Status</string>
+    <string name="set_tx_power">Set Tx Power</string>
+    <string name="manufacturer">Manufacturer: </string>
+    <string name="model_num">Model Num: </string>
+    <string name="noData"></string>
+    <string name="power_off_card">Power Off Card</string>
+    <string name="power_on_card">Power On Card</string>
+    <string name="serial_num">Serial Num: </string>
+    <string name="card_status">Card Status</string>
+    <string name="start_polling">Start Polling</string>
+    <string name="status_change_notifications">Status change notifications</string>
+    <string name="stop_polling">Stop Polling</string>
+    <string name="system_id">System ID: </string>
+    <string name="transmit_apdu">Transmit APDU</string>
+    <string name="transmit_escape_command">Transmit Escape Command</string>
+    <string-array name="tx_power_values">
+        <item>-23 dBm</item>
+        <item>-6 dBm</item>
+        <item>0 dBm</item>
+        <item>4 dBm</item>
+    </string-array>
+    <!-- Connection status -->
+    <string name="connect">Connect</string>
+    <string name="connected">Connected</string>
+    <string name="connect_fail">Fail to connect</string>
+    <string name="printer_connect_fail">Fail to connect to the Printer</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="disconnecting">Disconnecting</string>
+    <string name="disconnect_fail">Fail to disconnect</string>
+
+    <!-- Menu items -->
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+    <string name="reader_not_configured_title">Reader Settings</string>
+    <string name="reader_not_configured_msg">Reader not Configured. Would you like to Configure Reader?</string>
+    <string name="sleep_time_60">60 Seconds</string>
+    <string name="sleep_time_90">90 Seconds</string>
+    <string name="sleep_time_120">120 Seconds</string>
+    <string name="sleep_time_180">180 Seconds</string>
+    <string name="sleep_time_disable">Disable</string>
+    <string name="bat_opt_disable">Ignore Battery Opt</string>
+    <string name="bat_opt_unsupported">Battery Optimisation not Supported</string>
+    <string name="operation_unsupported">Unsupported Operation,this Operation not Supported</string>
+
+
+    <string name="header_name">Point of Sale - Delightful Express</string>
+    <string name="reciept">Invoice</string>
+    <string name="cash_reciept_open">Kassenbestand</string>
+    <string name="cash_reciept_closed">Abrechnung</string>
+    <string name="summary_reciept_title">Abrechnung %1$s</string>
+    <string name="cashmachine_reciept_title">Automatenentnahme</string>
+    <string name="cancel_reciept">Stornobeleg</string>
+    <string name="welcome">Welcome %1$s</string>
+    <string name="legal_info">TPIN: %1$s</string>
+    <string name="confirm_cash_msg">Cash Amount in Cash Drawer is %1$s.\nPlease confirm the cash.</string>
+    <string name="place">Delightful Express, %1$s</string>
+    <string name="place_address">Email: email@domain.com \nTel: 1234567890 \nFax: 1234567890 \nWebsite: www.shop.com</string>
+    <string name="place_address_dynamic">Email: %1$s \nTel: %2$s \nFax: %3$s \nWebsite: %4$s</string>
+
+    <string name="add_amount_msg">&#160;&#160;Please Add %1$s amount to the Cash \n&#160;&#160;Drawer.</string>
+    <string name="sub_amount_msg">&#160;&#160;Please withdraw %1$s amount from the \n&#160;&#160;Cash Drawer.</string>
+    <string name="matched_amount_msg">Cash Matched !!</string>
+    <string name="price">Einzelpreis</string>
+    <string name="amount">Amount</string>
+    <string name="subtotal">Zwischensumme:&#160;</string>
+    <string name="vat" formatted="false">MwSt. %1$s:&#160;</string>
+    <string name="vat_without_colon" formatted="false">MwSt. %1$s&#160;</string>
+
+    <string name="sub_total_net">Netto:&#160;</string>
+    <string name="signon">Signon:&#160;</string>
+    <string name="azubi">Azubi:&#160;</string>
+    <string name="discount">Gästezuschlag:&#160;</string>
+    <string name="discount2">Rabatt %1$s:&#160;</string>
+    <string name="total">Summe</string>
+    <string name="total_incl_vat">Grand total:&#160;</string>
+    <string name="cash_given">Cash Given:&#160;</string>
+    <string name="cash">Cash:&#160;</string>
+    <string name="card">Card:&#160;</string>
+    <string name="cheque">Cheque:&#160;</string>
+    <string name="bank_transfer">Bank Transfer:&#160;</string>
+    <string name="payment_method">Payment by:&#160;</string>
+    <string name="cash_recieve">Cash Received:&#160;</string>
+    <string name="cash_returned">Cash Returned:&#160;</string>
+    <string name="deducted_value">Kartenzahlung:&#160;</string>
+    <string name="card_balance">Guthaben Karte:&#160;</string>
+    <string name="sales">Sales:&#160;</string>
+    <string name="change">Change:&#160;</string>
+    <string name="num_item">Number of Items:&#160;</string>
+    <string name="order_number">Invoice No:</string>
+    <string name="order_date">Date:</string>
+    <string name="receipt_sno">Z-Bon:</string>
+    <string name="cashmachine_receipt_sno">Belegnummer:</string>
+    <string name="cashmachine_sno">Bargeldaufwerter:</string>
+    <string name="monthly_receipt_sno">ZZ-Bon:</string>
+    <string name="served_by">Cashier:</string>
+    <string name="customer_email">Email:</string>
+    <string name="customer_mobile">Phone:</string>
+    <string name="customer_name">Name:</string>
+    <string name="total_sales">Gesamtumsatz</string>
+    <string name="sales_umsatz">Umsatz %1$s</string>
+    <string name="sales_umsatz_normal">BAR Umsatz %1$s</string>
+    <string name="sales_umsatz_nfc">NFC Umsatz %1$s</string>
+    <string name="cancel_order">Storno</string>
+    <string name="num_bottle_deposit">Pfand</string>
+    <string name="cash_refunded">Rückerstattet:&#160;</string>
+    <string name="cash_denomination">Aufwertung&#160;</string>
+    <string name="cash_quantity">Anzahl&#160;</string>
+    <string name="cash_total">Gesamt&#160;</string>
+    <string name="cash_summe">Summe&#160;</string>
+
+    <string name="zzbon_checksum">Prüfsumme</string>
+    <string name="withdrawal">Entnahmen</string>
+    <string name="cash_added">Auffüllung</string>
+    <string name="bar_withdrawal">BAR Entnahmen</string>
+    <string name="bar_cash_added">BAR Auffüllung</string>
+    <string name="nfc_withdrawal">NFC Entladung</string>
+    <string name="nfc_added">NFC Aufladung</string>
+    <string name="cash_added_quoted">"Auffüllung"</string>
+    <string name="daily_sum">Tagessumme</string>
+    <string name="cash_amount">BAR</string>
+    <string name="cash_counted">BAR Gezählt</string>
+    <string name="cash_diff">Differenz</string>
+    <string name="cashier_name">Cashier Name:</string>
+    <string name="register_name">Kasse:</string>
+    <string name="status">Status:</string>
+    <string name="location">Location:&#160;&#160;&#160;&#160;</string>
+    <string name="date">Date:&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+
+    <string name="drawer">Drawer</string>
+    <string name="balance">Balance </string>
+    <string name="customer_one">Gästezuschlag</string>
+    <string name="add_cash">Bargeld Auffüllung</string>
+    <string name="withdraw_cash">Bargeld Entnahme</string>
+    <string name="add_nfc_cash">Key/Card Guthaben</string>
+    <string name="withdraw_nfc_cash">Key/Card Guthaben</string>
+    <string name="withdraw_string">Entnahme</string>
+    <string name="withdraw_nfc_string">Guthaben ausgezahlt</string>
+    <string name="withdraw_static_footer">Bestätigt von:</string>
+    <string name="add_string">Auffüllung</string>
+    <string name="add_nfc_string">Guthaben hinzugefügt</string>
+    <string name="add_nfc_total_string">Guthaben Key/Card</string>
+    <string name="monthly_receipt_footer">Gesamtumsatz</string>
+
+
+    <string name="app_admin">Kasse</string>
+    <string name="btn_discovery">Discovery</string>
+    <string name="btn_list_cache">List Web Cache</string>
+    <string name="btn_list_allcache">List All Cache</string>
+    <string name="btn_usbdiscovery">USB Discovery</string>
+    <string name="title_printerseries">Printer Series</string>
+    <string name="logo_size_hint">Size: 120*120, less than 500kb</string>
+    <string name="title_lang">Language</string>
+    <string name="title_pin">Pin</string>
+    <string name="title_pulse">Pulse</string>
+    <string name="title_pos">POS</string>
+    <string name="title_reader">Reader</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_dialog_save_msg">Do you want to save these settings ?</string>
+
+
+
+
+    <string name="btn_samplereceipt">Sample Receipt</string>
+    <string name="btn_scanreader">Scan Reader</string>
+    <string name="btn_usbreader">Scan USB Reader</string>
+    <string name="btn_browse">Browse</string>
+
+    <string name="btn_save">Save</string>
+    <string name="btn_ftp_settings">Ftp Settings</string>
+    <string name="btn_cache_settings">Cache Settings</string>
+    <string name="ftp_settingssavesuccess">Ftp Settings has been Saved</string>
+    <string name="btn_samplecoupon">Sample Coupon</string>
+    <string name="title_activity_discovery">DiscoveryActivity</string>
+    <string name="default_target">TCP:192.168.192.168</string>
+    <string name="settings_url_hint">POS URL</string>
+    <string name="reader_url_hint">Reader</string>
+    <string name="usbreader_url_hint">USB Reader</string>
+    <string name="force_switching_hint">Force Printer Switching</string>
+    <string name="logo_hint">Logo</string>
+    <string name="logs_hint">Logs</string>
+    <string name="title_warnings">Printer Warnings</string>
+    <string name="print_job_id">ABC123</string>
+    <string name="pos_pos">POS</string>
+    <string name="pos_dussmann">DUSSMANN</string>
+
+    <string name="handlingmsg_warn_receipt_near_end">Roll paper is nearly end.\n</string>
+    <string name="handlingmsg_warn_battery_near_end">Battery level of printer is low.\n</string>
+    <string name="handlingmsg_err_no_response">Please check the connection of the printer and the mobile terminal.\nConnection get lost.\n</string>
+    <string name="handlingmsg_err_cover_open">Please close roll paper cover.\n</string>
+    <string name="handlingmsg_err_receipt_end">Please check roll paper.\n</string>
+    <string name="handlingmsg_err_paper_feed">Please release a paper feed switch.\n</string>
+    <string name="handlingmsg_err_autocutter">Please remove jammed paper and close roll paper cover.\nRemove any jammed paper or foreign substances in the printer, and then turn the printer off and turn the printer on again.\n</string>
+    <string name="handlingmsg_err_need_recover">Then, If the printer doesn\'t recover from error, please cycle the power switch.\n</string>
+    <string name="handlingmsg_err_unrecover">Please cycle the power switch of the printer.\nIf same errors occurred even power cycled, the printer may out of order.</string>
+    <string name="handlingmsg_err_overheat">Please wait until error LED of the printer turns off. \n</string>
+    <string name="handlingmsg_err_head">Print head of printer is hot.\n</string>
+    <string name="handlingmsg_err_motor">Motor Driver IC of printer is hot.\n</string>
+    <string name="handlingmsg_err_battery">Battery of printer is hot.\n</string>
+    <string name="handlingmsg_err_wrong_paper">Please set correct roll paper.\n</string>
+    <string name="handlingmsg_err_battery_real_end">Please connect AC adapter or change the battery.\nBattery of printer is almost empty.\n</string>
+    <string name="handlingmsg_err_offline">Printer is offline.\n</string>
+    <string name="connecting">Connecting</string>
+    <string name="printing">Printing</string>
+    <string name="thankyou_msg">Thank you for your purchase \nDownload Our App from Playstore \n</string>
+    <string name="size_error">Logo must be less than %1$d Kb</string>
+
+    <string name="value_updated">Karte aktualisiert</string>
+    <string name="waiting_for_card">Bitte Karte auflegen</string>
+    <string name="card_reader_ready">NFC ist bereit</string>
+    <string name="not_enough_amount_present">Nicht genügend Guthaben vorhanden</string>
+    <string name="exceeding_mac_amount_limit">Bei Überschreiten der maximalen Betragsgrenze</string>
+    <string name="usb_device_attached">USB DEVICE ATTACHED</string>
+    <string name="failed_to_add_request">Failed to Add Request</string>
+    <string name="payment_success">Payment Successfull</string>
+    <string name="change_string">Wechselgeld</string>
+
+
+    <array name="keys_array">
+        <item>ffffffffffff</item>
+        <item>a0b0c0d0e0f0</item>
+        <item>a1b1c1d1e1f1</item>
+        <item>a0a1a2a3a4a5</item>
+        <item>b0b1b2b3b4b5</item>
+        <item>4d3a99c351dd</item>
+        <item>1a982c7e459a</item>
+        <item>000000000000</item>
+        <item>d3f7d3f7d3f7</item>
+        <item>aabbccddeeff</item>
+    </array>
+    <!--ftp Strings -->
+    <string name="server_not_valid">server not valid</string>
+    <string name="username_not_valid">username not valid</string>
+    <string name="password_not_valid">password not valid</string>
+    <string name="path_not_valid">path not valid</string>
+    <string name="localfilefullpath_not_valid">localfilefullpath not valid</string>
+    <string name="port_not_valid">port not valid</string>
+    <string name="target_not_valid">target not valid</string>
+    <string name="posurl_not_valid">Pos Url not valid</string>
+    <string name="reader_battery">Reader Battery</string>
+    <string name="cash_reciept">Cash Reciept</string>
+    <string name="disabled_beep">Disbale Beep</string>
+    <string name="error_format_card">Unable to Format Card</string>
+    <string name="error_write_card">Unable to Write Card</string>
+    <string name="web_error_desc">Server Down oder Ihr Netzwerk ist zu langsam. \n Error:%1$s description:%2$s</string>
+    <string name="power_saving_message">Der Energiesparmodus ist aktiviert. Wir empfehlen Ihnen, den Energiesparmodus unter Verwendung von App zu deaktivieren</string>
+    <string name="test_printer">Test Printer</string>
+    <string name="invoice_header">Tigmoo Shop N Ship \n Plot 6392 Dundudza Chididza Road \n Longacres, Lusaka \n www.tigmooshopnship.com \n 0971269390\n\nTPIN: DE162463073</string>
+    <string name="invoice_title">Invoice</string>
+    <string name="invoice_detail_error">Unable to Fetch Invoice Detail. Please try Again</string>
+    <string name="invoice_amount_error_msg">Please enter valid amount.</string>
+    <string name="action_print">Print</string>
+    <string name="invoice_detail_json_date_error">Invalid Json,Unable to Print this data.</string>
+    <string name="create_invoice_success_message">Invoice created successfully. \n Do you want to print this invoice</string>
+    <string name="delivery_title">Delivery</string>
+    <string name="total_label">TOTAL</string>
+    <string name="done_label">Done</string>
+    <string name="payment_title">Payment</string>
+    <string name="collected_label">COLLECTED</string>
+    <string name="cash_label">CASH</string>
+    <string name="card_label">CARD</string>
+    <string name="accept_transfer_title">Accept Transfer</string>
+   
+      <string name="delivery_search">Delivery</string>
+    <string name="report_title">Report</string>
+    <string name="title_driver_report">Report</string>
+    <string name="from_date_missing_msg">Please select from date</string>
+    <string name="to_date_missing_msg">Please select to date</string>
+    <string name="collected_btn">Collected</string>
+    <string name="not_collected">Can\'t Collect</string>
+    <string name="transfer_title">Transfer</string>
+    <string name="waiting_label">WAITING</string>
+    <string name="accept_label">ACCEPT</string>
+    <string name="title_trasnfer_list">Transfer List</string>
+    <string name="choose_driver_hint">Choose Driver</string>
+    <string name="transfer_empty_parcel_msg">Please select parcel</string>
+    <string name="transfer_empty_driver_msg">Please select driver</string>
+    <string name="title_aceept_list">Accept List</string>
+    <string name="assign_by_label">Assigned By:</string>
+    <string name="title_transfer_waiting_list">Waiting List</string>
+    <string name="assign_to_label">Assigned To:</string>
+    <string name="name_label">Name:</string>
+    <string name="company_label">Company:</string>
+    <string name="department_label">Deparment:</string>
+    <string name="address_label">Address:</string>
+    <string name="phone_label">Phone:</string>
+    <string name="line_label">Line:</string>
+    <string name="extenssion_label">Ext:</string>
+    <string name="total_label_1">Total:</string>
+    <string name="weight_label">Weight:</string>
+    <string name="special_ins_label">Special Inst:</string>
+    <string name="shipment_label">Shipment Detail</string>
+    <string name="service_label">Services</string>
+    <string name="service_label_1">Service:</string>
+    <string name="freight_label">Freight:</string>
+    <string name="payment_label">Payment Detail</string>
+    <string name="return_label">Return:</string>
+    <string name="title_peniding_pickup_parcel">Pending Pickup List</string>
+    <string name="title_received_pickup_parcel">Received Parcel List</string>
+    <string name="pieces_label">Pieces</string>
+    <string name="dimension_label">Dimension</string>
+    <string name="vol_weight_label">Vol. Weight</string>
+    <string name="weight_label_shipment">Weight</string>
+    <string name="on_account_label">On Account:</string>
+    <string name="cod_label">COD:</string>
+    <string name="transaction_id_label">Transaction Id:</string>
+    <string name="awb_label">AWB:</string>
+
+    <string name="card_prefix_received">CARD: </string>
+    <string name="cash_prefix_received">CASH: </string>
+    <string name="on_account_prefix">ON ACCOUNT: </string>
+    <string name="cod_prefix">COD: </string>
+    <string name="collection_empty_amount_msg">Please Enter Amount</string>
+    <string name="collection_empty_transaction_id_msg">Please Enter Transaction Id</string>
+    <string name="collection_valid_amount_msg">Please Enter Valid Amount</string>
+    <string name="collection_checkbox_msg">Please Select the box</string>
+    <string name="collection_empty_awb_msg">Please Scan AWB</string>
+    <string name="collection_awb_exist_msg">AWB is already exist</string>
 </resources>

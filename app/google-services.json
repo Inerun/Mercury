@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "935112107720",
-    "firebase_url": "https://dropinsta-f9301.firebaseio.com",
-    "project_id": "dropinsta-f9301",
-    "storage_bucket": "dropinsta-f9301.appspot.com"
+    "project_number": "1048108951049",
+    "firebase_url": "https://mercury-8b436.firebaseio.com",
+    "project_id": "mercury-8b436",
+    "storage_bucket": "mercury-8b436.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:935112107720:android:a05895afb684b7a7",
+        "mobilesdk_app_id": "1:1048108951049:android:8f471566eea89b28",
         "android_client_info": {
-          "package_name": "com.inerun.dropinsta"
+          "package_name": "com.inerun.courier"
         }
       },
       "oauth_client": [
         {
-          "client_id": "935112107720-g942totqojpl50054rthpua7f8cv6mds.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.inerun.dropinsta",
-            "certificate_hash": "47D18ECDFBCC5370EF5B6C61F5E8622B4B87F981"
-          }
-        },
-        {
-          "client_id": "935112107720-atflcda50sh8tugspt6aabks5e795nql.apps.googleusercontent.com",
+          "client_id": "1048108951049-5vhmrfnou2saofia6tjieolu7jkch3ss.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC1xeKz_8LHLsfWXzUE6gjat5nTXLC2_dY"
+          "current_key": "AIzaSyDQNREH-ljhUhpcI50nJhM_lBgXalSSLqI"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "935112107720-atflcda50sh8tugspt6aabks5e795nql.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

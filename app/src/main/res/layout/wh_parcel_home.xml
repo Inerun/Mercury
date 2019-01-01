@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="10"
-    >
+    android:orientation="horizontal"
+    android:weightSum="10">
+
     <include layout="@layout/progressbar_layout" />
 
 
@@ -13,8 +14,7 @@
         android:layout_height="match_parent"
 
         android:orientation="vertical"
-        android:weightSum="10"
-       >
+        android:weightSum="12">
 
         <RelativeLayout
             android:id="@+id/addparcel_layout"
@@ -35,16 +35,15 @@
                 android:src="@mipmap/add_parcel_home"
 
 
-
                 />
+
             <ImageView
                 android:id="@+id/addparcel_image_opacity"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-
                 android:background="@color/homeaddparcel_back"
 
+                android:scaleType="centerCrop"
 
 
                 />
@@ -54,8 +53,8 @@
                 android:id="@+id/addparcel_imgstyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
                 android:layout_marginBottom="30dp"
                 android:layout_marginRight="30dp"
                 android:scaleType="centerCrop"
@@ -69,13 +68,13 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
                 android:layout_marginBottom="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_toLeftOf="@+id/addparcel_imgstyle"
-                android:textColor="@android:color/white"
                 android:text="@string/add_parcel_title"
+                android:textColor="@android:color/white"
                 android:textSize="@dimen/home_text_size"
 
 
@@ -104,12 +103,13 @@
                 android:src="@mipmap/search_parcel_home"
 
                 />
+
             <ImageView
                 android:id="@+id/searchparcel_image_opacity"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
                 android:background="@color/homesearchparcel_back"
+                android:scaleType="centerCrop"
 
                 />
 
@@ -118,8 +118,8 @@
                 android:id="@+id/searchparcel_imgstyle3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
                 android:layout_marginBottom="30dp"
                 android:layout_marginRight="30dp"
                 android:scaleType="centerCrop"
@@ -129,16 +129,14 @@
                 />
 
 
-
-
             <TextView
                 android:id="@+id/tv_searchparcel"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:layout_alignParentBottom="true"
                 android:layout_marginBottom="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_toLeftOf="@+id/searchparcel_imgstyle3"
@@ -170,29 +168,28 @@
                 android:src="@mipmap/readyforparcel"
 
 
-
                 />
 
             <ImageView
                 android:id="@+id/readyparcel_image_opacity"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
+                android:layout_alignParentLeft="true"
 
-                android:background="@color/homereadyparcel_back"
+                android:layout_alignParentStart="true"
 
 
                 android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:background="@color/homereadyparcel_back"
+                android:scaleType="centerCrop" />
 
 
             <ImageView
                 android:id="@+id/readyparcel_imgstyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
                 android:layout_marginBottom="30dp"
                 android:layout_marginRight="30dp"
                 android:scaleType="centerCrop"
@@ -202,29 +199,95 @@
                 />
 
 
-
             <TextView
                 android:id="@+id/tv_readyparcel"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
                 android:layout_marginBottom="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_toLeftOf="@+id/readyparcel_imgstyle"
-                android:textColor="@android:color/white"
                 android:text="Ready For Delivery"
+                android:textColor="@android:color/white"
                 android:textSize="@dimen/home_text_size"
 
 
                 />
 
 
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/stockparcel_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/stockparcel_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+
+
+                android:src="@mipmap/add_parcel_home"
+
+
+                />
+
+            <ImageView
+                android:id="@+id/stockparcel_image_opacity"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+
+                android:layout_alignParentStart="true"
+
+
+                android:layout_alignParentTop="true"
+                android:background="@color/homestockparcel_back"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:id="@+id/stockparcel_imgstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/arrow_white"
+
+
+                />
+
+
+            <TextView
+                android:id="@+id/tv_stockparcel"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toLeftOf="@+id/stockparcel_imgstyle"
+                android:text="Stock Check"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_text_size"
+
+
+                />
 
 
         </RelativeLayout>
-
 
     </LinearLayout>
 </LinearLayout>

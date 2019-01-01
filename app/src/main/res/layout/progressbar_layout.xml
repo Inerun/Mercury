@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+<com.victor.loading.rotate.RotateLoading xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/progressBar"
-    style="?android:attr/progressBarStyleHorizontal"
+
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentTop="true"
     android:layout_marginTop="-6dp"
     android:indeterminate="true"
-
+    app:loading_width="@dimen/rotating_progress_width"
+    app:loading_color="@color/rotating_progress_color"
     android:visibility="gone" />

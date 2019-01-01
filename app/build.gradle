@@ -1,16 +1,25 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    buildToolsVersion '28.0.3'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId "com.inerun.dropinsta"
-        minSdkVersion 17
-        targetSdkVersion 25
+        applicationId "com.inerun.courier"
+        minSdkVersion 21
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
     }
     buildTypes {
         release {
@@ -18,34 +27,89 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+//    sourceSets {
+//        main {
+//            jniLibs.srcDir 'jniLibs'
+//
+//        }
+//    }
+//    dexOptions {
+//
+//        javaMaxHeapSize "4g"
+//    }
+
+    splits {
+        abi {
+
+            enable !project.hasProperty('dbgBld')
+            reset()
+//            include 'arm64-v8a','armeabi', 'armeabi-v7a', 'x86', 'mips','mips64','x86_64'
+            universalApk true
+
+
+        }
+    }
+
+
+}
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://maven.google.com/'
+        google()
+    }
+    jcenter()
+
 }
 
+def dbflow_version = "4.2.4"
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile files('libs/android-async-http-1.4.9.jar')
-    compile files('libs/httpclient-4.3.6.jar')
-    compile files('libs/zbar.jar')
-    compile 'com.android.support:appcompat-v7:27.1.1'
-    compile 'com.android.support:design:27.1.1'
-    compile 'com.google.code.gson:gson:2.8.0'
-    compile 'com.squareup.okhttp:okhttp:2.7.5'
-    compile 'com.android.volley:volley:1.0.0'
-    compile 'com.android.support:recyclerview-v7:27.1.1'
-    compile 'com.github.gcacace:signature-pad:1.2.0'
-    compile 'com.google.firebase:firebase-messaging:15.0.2'
-    compile 'me.drakeet.materialdialog:library:1.3.1'
-    compile 'com.weiwangcn.betterspinner:library-material:1.1.0'
-    testCompile 'junit:junit:4.12'
-    compile 'cn.pedant.sweetalert:library:1.3'
-    
-    /*Pagination in recycler view*/
-    compile 'com.github.markomilos:paginate:0.5.1'
-    compile 'com.github.castorflex.smoothprogressbar:library-circular:1.1.0'
-    
+    implementation files('libs/android-async-http-1.4.9.jar')
+    implementation files('libs/httpclient-4.3.6.jar')
+    implementation files('libs/zbar.jar')
+    implementation 'com.github.vishal259:EasyLocation:1.0'
+    implementation "com.google.android.gms:play-services-location:16.0.0"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.github.gcacace:signature-pad:1.2.0'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'me.drakeet.materialdialog:library:1.3.1'
+    implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+    implementation 'com.github.castorflex.smoothprogressbar:library-circular:1.1.0'
+    implementation 'com.victor:lib:1.0.4'
+    implementation 'com.ncapdevi:frag-nav:2.2.1'
+    implementation 'com.koushikdutta.ion:ion:2.2.1'
+    implementation files('libs/ePOS2.jar')
+    implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
+
+    // DBFLOW
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.1'
+    kapt "com.github.Raizlabs.DBFlow:dbflow-processor:$dbflow_version"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:$dbflow_version"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:$dbflow_version"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-sqlcipher:$dbflow_version"
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+    implementation 'com.arasthel:asyncjob-library:1.0.3'
+    implementation 'com.wang.avi:library:2.1.3'
+    //File copy
+    implementation 'commons-io:commons-io:2.4'
+    // for swipe delete recycler view
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+
 }
 
-
-apply plugin: 'com.google.gms.google-services'

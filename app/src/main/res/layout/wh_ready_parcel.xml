@@ -17,7 +17,7 @@
         android:paddingLeft="@dimen/fragment_layout_margin10dp"
         android:paddingRight="@dimen/fragment_layout_margin10dp">
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/invoiceno_edt"
             style="@style/search_edittext_view_style"
@@ -39,7 +39,7 @@
             android:text="GO"
             android:textColor="@color/white" />
 
-        <com.inerun.dropinsta.fontlib.CustomFontButton
+        <com.inerun.courier.fontlib.CustomFontButton
             android:id="@+id/search_button"
             style="@style/button_view_style"
             android:layout_width="fill_parent"
@@ -112,7 +112,7 @@
             android:visibility="gone"/>
 
 
-        <com.inerun.dropinsta.fontlib.CustomFontButton
+        <com.inerun.courier.fontlib.CustomFontButton
             android:id="@+id/delivery_button"
             style="@style/button_view_style"
             android:layout_width="fill_parent"

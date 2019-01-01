@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DropInsta.iml" filepath="$PROJECT_DIR$/DropInsta.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SNS_New.iml" filepath="$PROJECT_DIR$/SNS_New.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mercury.iml" filepath="$PROJECT_DIR$/Mercury.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

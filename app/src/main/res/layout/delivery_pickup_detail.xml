@@ -6,99 +6,228 @@
     android:layout_height="wrap_content"
     android:background="#E9E9E9">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/linearbottom"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="5dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="8dp">
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        >
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
 
-            <RelativeLayout
-                android:id="@+id/relative_detail"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF">
-
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="@color/grey_100"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                >
+                <TextView
+                    android:id="@+id/id_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Parcel#:"
+                    android:textColor="@color/black"
+                    />
                 <TextView
                     android:id="@+id/pickup_detail_parcel_id"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="ParcelId" />
+                    android:layout_weight="2"
+                    />
 
-                <TextView
-                    android:id="@+id/pickup_detail_reg_date"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pickup_detail_parcel_id"
-                    android:padding="5dp"
-                    android:text="Registration Date" />
+            </LinearLayout>
 
-                <TextView
-                    android:id="@+id/pickup_detail_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pickup_detail_reg_date"
-                    android:padding="5dp"
-                    android:text="Name" />
-
-                <TextView
-                    android:id="@+id/pickup_detail_phone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pickup_detail_name"
-                    android:padding="5dp"
-                    android:text="Phone" />
-
-                <TextView
-                    android:id="@+id/pickup_detail_address"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pickup_detail_phone"
-                    android:maxLines="2"
-                    android:padding="5dp"
-                    android:text="Address " />
-                <TextView
-                    android:id="@+id/pickup_detail_weight"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pickup_detail_address"
-                    android:maxLines="2"
-                    android:padding="5dp"
-                    android:text="Parcel Weight " />
-
-                <TextView
-                    android:id="@+id/pickup_detail_price"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="Price"
-                    android:layout_below="@+id/pickup_detail_weight"
-                   />
-            </RelativeLayout>
-
-            <RelativeLayout
-
-                android:id="@+id/relative_detail1"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/relative_detail">
-
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                >
                 <TextView
-
-                    android:id="@+id/pickup_detail_comment"
-                    android:layout_width="match_parent"
+                    android:id="@+id/date_label"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="Comment" />
-            </RelativeLayout>
-        </RelativeLayout>
+                    android:layout_weight="1"
+                    android:text="Date:"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/pickup_detail_reg_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:background="@color/grey_100"
+                >
+                <TextView
+                    android:id="@+id/name_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name:"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/pickup_detail_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                >
+                <TextView
+                    android:id="@+id/phone_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Phone:"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/pickup_detail_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:background="@color/grey_100"
+                >
+                <TextView
+                    android:id="@+id/address_label"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Address:"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/pickup_detail_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                >
+                <TextView
+                    android:id="@+id/weight_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Weight:"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/pickup_detail_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:background="@color/grey_100"
+                >
+                <TextView
+                    android:id="@+id/price_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Price:"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/pickup_detail_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                >
+                <TextView
+                    android:id="@+id/Comment_label"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Comment:"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/pickup_detail_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
     </ScrollView>
 
     <LinearLayout
@@ -107,7 +236,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
 
         <Button
             android:id="@+id/pickup_btn"
@@ -115,8 +248,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#00A54F"
-            android:text="PICK"
-            android:visibility="visible" />
+            android:text="@string/collected_btn"
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/_1sdp"
+            />
 
         <Button
             android:id="@+id/not_pickup_btn"
@@ -124,8 +259,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#F7941D"
-            android:text="NOT PICK"
-            android:visibility="visible" />
+            android:text="@string/not_collected"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/_1sdp"
+            />
     </LinearLayout>
 
 </RelativeLayout>
