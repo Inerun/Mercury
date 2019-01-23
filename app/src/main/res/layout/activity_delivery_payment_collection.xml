@@ -32,7 +32,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorGray"
-
             android:text="@string/payment_collection_card"
             android:maxLines="2"
             />
@@ -46,9 +45,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tab_lay"
-        android:layout_marginTop="@dimen/layout_margin10dp"
-        android:layout_marginLeft="@dimen/layout_margin10dp"
-        android:layout_marginRight="@dimen/layout_margin10dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
         android:overScrollMode="never"
         android:visibility="visible"
         />

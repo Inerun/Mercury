@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:animateLayoutChanges="true">
 
     <include layout="@layout/progressbar_layout" />
@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
-        android:background="@color/black" />
+        android:background="@color/black"
+        android:visibility="gone" />
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -30,8 +31,8 @@
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_margin="@dimen/_10sdp"
             android:focusableInTouchMode="true"
-
             android:orientation="vertical">
 
             <Spinner
@@ -72,28 +73,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/divider2"
-
                 android:layout_marginBottom="@dimen/layout_margin20dp">
 
-                <com.inerun.dropinsta.fontlib.CustomFontEditText
-                    app:met_floatingLabel="highlight"
+                <com.inerun.courier.fontlib.CustomFontEditText
                     android:id="@+id/pickup_comment"
                     style="@style/desc_edittext_view_style"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-
-
                     android:background="@color/white"
                     android:gravity="top|left"
-
                     android:hint="@string/comment_hint"
                     android:inputType="textMultiLine"
-
                     android:maxLines="4"
                     android:minHeight="80dp"
                     android:padding="@dimen/layout_margin5dp"
-                    android:singleLine="false" />
+                    android:singleLine="false"
+                    app:met_floatingLabel="highlight" />
 
             </RelativeLayout>
 

@@ -23,7 +23,7 @@
 
 
         />
-    <com.inerun.dropinsta.fontlib.CustomFontEditText
+    <com.inerun.courier.fontlib.CustomFontEditText
         app:met_floatingLabel="highlight"
         android:id="@+id/add_parcel_num_edt"
         style="@style/search_text_view_style"

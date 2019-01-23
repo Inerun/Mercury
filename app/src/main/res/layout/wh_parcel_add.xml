@@ -8,7 +8,7 @@
   <include layout="@layout/headerlayout"
       android:id="@+id/include" />
 
-    <com.inerun.dropinsta.fontlib.CustomFontButton
+    <com.inerun.courier.fontlib.CustomFontButton
         android:id="@+id/wh_save_all"
         style="@style/button_view_style"
         android:layout_width="fill_parent"
@@ -102,7 +102,7 @@
 
             </LinearLayout>
 
-            <com.inerun.dropinsta.helper.ExpandableHeightListView
+            <com.inerun.courier.helper.ExpandableHeightListView
                 android:id="@+id/parcel_listview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

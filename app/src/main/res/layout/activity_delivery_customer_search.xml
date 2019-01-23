@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    android:padding="@dimen/layout_margin10dp"
+    android:padding="@dimen/_5sdp"
     >
     <EditText
         android:textCursorDrawable="@drawable/color_cursor"

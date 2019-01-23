@@ -24,10 +24,10 @@
     <color name="button_color">#00A54F</color>
     <color name="notification_back_color">#fff</color>
     <color name="title_text">#F59019</color>
-    <color name="white">#fff</color>
+ <!--<color name="white">#fff</color>-->
     <color name="white50">#80ffffff</color>
 
-    <color name="black">#ff000000</color>
+    <!--<color name="black">#ff000000</color>-->
     <color name="red">#d73249</color>
     <color name="yellow">#ffcb00</color>
     <color name="tab_selected_color">@android:color/white</color>
@@ -36,9 +36,23 @@
     <color name="homeaddparcel_back">#B31B9F8D</color>
     <color name="homesearchparcel_back">#B3283C55</color>
     <color name="homereadyparcel_back">#B3A52A2A</color>
+    <color name="homestockparcel_back">#B3F59019</color>
     <color name="colorlightyellow">#F1F0C7</color>
     <color name="text_color">#7C7C7C</color>
-
+    <color name="rotating_progress_color">@color/colorPrimary</color>
+    <color name="sweet_dialog_progress_color">#293E54</color>
+    <color name="nav_text">#757575</color>
+    <color name="textcolor_heading1">#1D1D26</color>
+    <color name="textcolor_heading2">#78787E</color>
+    <color name="textcolor_heading2_white">#FFFFFF</color>
+    <color name="textcolor_heading2_white_80">#CCFFFFFF</color>
+    <color name="ringinnercolor">#57D1C1</color>
+    <color name="nav_right_background">#BFFFFFFF</color>
+    <color name="accept_layout">#BB86B5</color>
+    <color name="accept_layout1">#009999</color>
+    <color name="waiting_layout">#F08080</color>
+    <!--<color name="transfer_layout">#997300</color>-->
+    <color name="transfer_layout">#736026</color>
 
     <integer-array name="color_array">
         <item>@color/red</item>
@@ -46,6 +60,11 @@
         <item>@color/greenColor</item>
         <item>@color/yellow</item>
     </integer-array>
+
+    <color name="selectedsatausaccent">#4D54B74E</color>
+    <color name="selectedsatausaccent1">#8054B74E</color>
+    <color name="met_error_color">#ddaa00</color>
+    <color name="primary">#00a550</color>
 
 
 </resources>

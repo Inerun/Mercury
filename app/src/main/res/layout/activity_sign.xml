@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:padding="2dp">
-    <com.inerun.dropinsta.fontlib.CustomFontEditText
+    <com.inerun.courier.fontlib.CustomFontEditText
         app:met_floatingLabel="highlight"
         android:id="@+id/receiver_name"
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         android:layout_margin="@dimen/layout_margin5dp"
         android:visibility="visible"
         />
-    <com.inerun.dropinsta.fontlib.CustomFontEditText
+    <com.inerun.courier.fontlib.CustomFontEditText
         app:met_floatingLabel="highlight"
         android:id="@+id/nationalid"
         android:layout_width="match_parent"

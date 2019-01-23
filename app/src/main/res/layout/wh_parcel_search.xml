@@ -34,7 +34,7 @@
             android:layout_below="@+id/header_title"
             android:orientation="horizontal">
 
-            <com.inerun.dropinsta.fontlib.CustomFontEditText
+            <com.inerun.courier.fontlib.CustomFontEditText
                 app:met_floatingLabel="highlight"
                 android:id="@+id/parcel_edt"
                 style="@style/search_edittext_view_style"
@@ -67,7 +67,7 @@
 
         </RelativeLayout>
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/name_edt"
             style="@style/search_edittext_view_style"
@@ -78,7 +78,7 @@
             android:maxLines="1"
             android:hint="@string/search_parcel_name" />
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/email_edt"
             style="@style/search_edittext_view_style"
@@ -90,7 +90,7 @@
             android:maxLines="1"
             android:hint="@string/search_parcel_email" />
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/phone_edt"
             style="@style/search_edittext_view_style"
@@ -102,7 +102,7 @@
             android:singleLine="true"
             android:hint="@string/search_parcel_contact" />
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/custid_edt"
             style="@style/search_edittext_view_style"
@@ -114,7 +114,7 @@
             android:singleLine="true"
             android:hint="@string/search_parcel_custid" />
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/invoice_edt"
             style="@style/search_edittext_view_style"
@@ -128,7 +128,7 @@
             android:visibility="visible"
             />
 
-        <com.inerun.dropinsta.fontlib.CustomFontButton
+        <com.inerun.courier.fontlib.CustomFontButton
             android:id="@+id/search_button"
             style="@style/button_view_style"
             android:layout_width="fill_parent"

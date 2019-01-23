@@ -30,6 +30,7 @@
     <string name="no">No</string>
     <string name="update_parcel">Update Parcels</string>
     <string name="update">Update</string>
+    <string name="sweet_alert_success_title">Success</string>
 
 
 </resources>

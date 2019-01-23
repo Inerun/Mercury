@@ -17,7 +17,7 @@
     <string name="address_country_hint">Country *</string>
     <string name="action_skip">skip</string>
     <string name="welcome_register">REGISTER</string>
-    <string name="email_hint">Email Id</string>
+    <string name="auction_email_hint">Email Id</string>
     <string name="password_hint">Password</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_up">Sign up</string>
@@ -43,7 +43,18 @@
     <string name="server_exception_error_message_general">It seems there is an error in server.</string>
     <string name="server_exception_error_message_resource_not_found">Requested resource does not exist on server.</string>
     <string name="server_exception_error_message_forbidden">Requested resource is forbidden.</string>
+    <string name="server_exception_error_message_indexoutofbound">Attempting to access an array with an invalid index value. </string>
+    <string name="server_exception_error_message_illegalargument">Method receives an argument formatted differently than the method expects. </string>
+    <string name="server_exception_error_message_numberformat">State of the environment doesn’t match the operation being attempted </string>
+    <string name="server_exception_error_message_ioexception">File input/output stream related exception </string>
 
+
+    <!--Exception message string-->
+
+
+    <string name="server_exception_error_message_response_null">No Response From Server.</string>
+    <string name="server_exception_error_message_invalid_parameter">Invalid Parameters. Either key or value is missing</string>
+    <string name="server_exception_error_message_nullpointerr">Null Pointer Exceptions. Either some value or reference is null. </string>
 <!--Error message String-->
 
     <string name="error_email_field">Email cannot be empty.</string>
@@ -114,6 +125,26 @@
         <item>Create</item>
         <item>Read</item>
         <item>Help</item>
+    </string-array>
+
+    <array name="diet_type_color_array">
+        <item>@android:color/holo_red_dark</item>
+        <item>@android:color/holo_green_dark</item>
+        <item>@android:color/holo_blue_dark</item>
+        <item>@android:color/holo_purple</item>
+        <item>@android:color/darker_gray</item>
+        <item>@android:color/holo_orange_dark</item>
+    </array>
+
+    <string-array name="sales_filter_array">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>Last 7 Days</item>
+        <item>Last 30 Days</item>
+        <item>This Month</item>
+        <item>Last Month</item>
+        <item>Custom Range</item>
+
     </string-array>
 
 </resources>

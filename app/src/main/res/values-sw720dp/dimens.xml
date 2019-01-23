@@ -92,7 +92,7 @@
     <dimen name="fab_margin">26dp</dimen>
 
     <!--Toolbar height-->
-    <dimen name="toolbar_height_100">150dp</dimen>
-    <dimen name="padding150">275dp</dimen>
+    <!--<dimen name="toolbar_height_100">150dp</dimen>-->
+    <!--<dimen name="padding150">275dp</dimen>-->
 
 </resources>

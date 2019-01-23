@@ -1,31 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.inerun.dropinsta">
+    package="com.inerun.courier">
 
+    <uses-feature android:name="android.hardware.usb.host" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
     <application
-        android:name=".DropInsta"
+        android:name="com.inerun.courier.CourierApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        tools:replace="android:icon"
         android:sharedUserId="android.uid.system"
-        android:theme="@style/AppTheme">
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize"
+        tools:replace="android:icon">
 
 
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.inerun.courier.activity_driver.SplashActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait"
@@ -39,185 +56,310 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="com.inerun.courier.activity_auction.AuctionSplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Auction"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            >
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
 
         <activity
-            android:name=".activity.DeliveryDashBoardActivity"
+            android:name="com.inerun.courier.activity_driver.DeliveryDashBoardActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme_NoArrow">
             <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
 
         </activity>
 
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.inerun.courier.activity_driver.LoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait">
 
         </activity>
         <activity
-            android:name=".activity.ParcelDetailActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="sensorPortrait">
-
-        </activity>
-
-        <activity
-            android:name=".activity.SignActivity"
+            android:name="com.inerun.courier.activity_driver.ParcelDetailActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait">
 
         </activity>
 
         <activity
-            android:name=".activity.ParcelUpdateActivity"
+            android:name="com.inerun.courier.activity_driver.SignActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+
+        <activity
+            android:name="com.inerun.courier.activity_driver.ParcelUpdateActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait">
 
         </activity>
         <activity
-            android:name=".activity_warehouse.WhDashboardActivity"
+            android:name="com.inerun.courier.activity_warehouse.WhDashboardActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme_NoArrow">
 
         </activity>
         <activity
-            android:name=".scanner.CameraTestActivity"
+            android:name="com.inerun.courier.scanner.CameraTestActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait">
 
         </activity>
         <activity
-            android:name=".activity.DeliveryAllParcelsActivity"
-            android:label="@string/search_parcel_search"
-            android:screenOrientation="sensorPortrait">
-
-        </activity> <activity
-            android:name=".activity.DeliverySearchActivity"
-            android:label="@string/search_parcel_search"
-            android:screenOrientation="sensorPortrait">
-
-        </activity> <activity
-            android:name=".activity.DeliveryPaymentsActivity"
+            android:name="com.inerun.courier.activity_driver.DeliveryAllParcelsActivity"
             android:label="@string/search_parcel_search"
             android:screenOrientation="sensorPortrait">
 
         </activity>
         <activity
-            android:name=".activity.DeliveryUpdateActivity"
+            android:name="com.inerun.courier.activity_driver.DeliverySearchActivity"
+            android:label="@string/search_parcel_search"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+        <activity
+            android:name="com.inerun.courier.activity_driver.DeliveryPaymentsActivity"
+            android:label="@string/search_parcel_search"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+        <activity
+            android:name="com.inerun.courier.activity_driver.DeliveryUpdateActivity"
             android:label="@string/search_parcel_search"
             android:screenOrientation="sensorPortrait">
 
         </activity>
 
         <activity
-            android:name=".activity.ExceptionHandlerActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="sensorPortrait">
-
-        </activity> <activity
-            android:name=".activity.DeliveryParcelDeliveryActivity"
+            android:name="com.inerun.courier.activity_driver.ExceptionHandlerActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait">
 
         </activity>
+        <activity
+            android:name="com.inerun.courier.activity_driver.DeliveryParcelDeliveryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
 
         <activity
-            android:name=".activity.DeliveryDeliveredParcelsActivity"
+            android:name="com.inerun.courier.activity_driver.DeliveryDeliveredParcelsActivity"
             android:label="@string/app_name"
-            android:screenOrientation="sensorPortrait">
-        </activity>
+            android:screenOrientation="sensorPortrait" />
 
         <activity
-            android:name=".activity.DeliveryPendingParcelsActivity"
+            android:name="com.inerun.courier.activity_driver.DeliveryPendingParcelsActivity"
             android:label="@string/app_name"
-            android:screenOrientation="sensorPortrait">
-        </activity>
+            android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".activity.DeliveryReturnParcelActivity"
+            android:name="com.inerun.courier.activity_driver.DeliveryReturnParcelActivity"
             android:label="@string/app_name"
-            android:screenOrientation="sensorPortrait">
-        </activity>
+            android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".activity.DeliveryAddParcelActivity"
+            android:name="com.inerun.courier.activity_driver.DeliveryAddParcelActivity"
             android:label="@string/app_name"
-            android:screenOrientation="sensorPortrait">
-        </activity>
+            android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".activity.DeliveryPickupParcelActivity"
+            android:name="com.inerun.courier.activity_driver.CollectionPendingListingActivity"
             android:label="@string/app_name"
-            android:screenOrientation="sensorPortrait">
-        </activity>
+            android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".activity.DeliveryPickupDetailActivity"
+            android:name="com.inerun.courier.activity_driver.CollectionPendingDetailActivity"
             android:label="@string/app_name"
-            android:screenOrientation="sensorPortrait">
-        </activity>
+            android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".activity.PodDeleteActivity"
+            android:name="com.inerun.courier.activity_driver.PodDeleteActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity_customer_care.CustomerDashboardActivity"
+            android:name="com.inerun.courier.activity_customer_care.CustomerDashboardActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
-            android:screenOrientation="sensorPortrait"
-            >
-        </activity>
-	
-	<activity
-            android:name=".activity_warehouse.WhSignActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name="com.inerun.courier.activity_warehouse.WhSignActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.inerun.courier.activity_auction.AuctionHomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name="com.inerun.courier.activity_customer_care.CustSignActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait">
 
-        </activity>	<activity
-            android:name=".activity_customer_care.CustSignActivity"
-            android:label="@string/app_name"
+        </activity>
+        <activity
+            android:name="com.inerun.courier.printer.DiscoveryActivity"
+            android:label="@string/btn_discovery"
             android:screenOrientation="sensorPortrait">
 
         </activity>
 
         <activity
-            android:name=".activity.NotiHandlerActivity"
+            android:name="com.inerun.courier.activity_driver.NotiHandlerActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.NoActionBar"
 
+            />
+
+
+        <activity
+            android:name="com.inerun.courier.activity_driver.ParcelRequestActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+        <activity
+            android:name="com.inerun.courier.activity_auction.SyncActivity"
+            android:screenOrientation="sensorPortrait"
+
+            android:theme="@style/AppTheme.NoActionBar"
+
             >
-            </activity>
 
-        <service android:name=".service.UploadingService" />
-        <service android:name=".service.whParcelUploadService" />
+        </activity>
+
+        <activity
+            android:name=".activity_driver.DeliveryReportActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity_driver.CollectionTransferReadyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity_driver.CollectionTransferDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity_driver.CollectionAcceptActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity_driver.CollectionTransferWaitActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity_driver.CollectionAllListingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+        <activity
+            android:name=".activity_driver.CollectionReceivedListingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity_driver.CollectionReceivedDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity_driver.CollectionAddressEditActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
 
 
-        <receiver android:name=".service.NetworkChangeReceiver">
+        <service android:name="com.inerun.courier.service.UploadingService" />
+        <service android:name="com.inerun.courier.service.whParcelUploadService" />
+
+
+        <receiver android:name="com.inerun.courier.service.NetworkChangeReceiver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
 
-        <service
-            android:name=".service.DropInstaFirebaseService">
+        <service android:name="com.inerun.courier.service.DropInstaFirebaseService">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service
-            android:name=".service.DropInstaFirebaseMessagingService">
+        <service android:name="com.inerun.courier.service.DropInstaFirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+        <service android:name="com.inerun.courier.printer.PrinterService">
+            <!--<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />-->
+            <!--<meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"-->
+            <!--android:resource="@xml/usb_printer_filter" />-->
+
+        </service>
+        <service android:name=".service.LocationUpdateService">
+            <!--<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />-->
+            <!--<meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"-->
+            <!--android:resource="@xml/usb_printer_filter" />-->
+
+        </service>
+
+
+        <activity
+            android:name=".activity_driver.LocationSenderActivity"
+            android:theme="@style/Theme.Transparent">
+
+        </activity>
+        <activity
+            android:name=".activity_driver.DeliveryShipmentViewActivity"
+            android:screenOrientation="sensorPortrait">
+
+        </activity><activity
+            android:name=".activity_driver.DeliveryShipmentEditActivity"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
 
     </application>
 

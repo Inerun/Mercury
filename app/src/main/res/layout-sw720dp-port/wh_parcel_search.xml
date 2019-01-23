@@ -34,7 +34,7 @@
             android:layout_below="@+id/header_title"
             android:orientation="horizontal">
 
-            <com.inerun.dropinsta.fontlib.CustomFontEditText
+            <com.inerun.courier.fontlib.CustomFontEditText
                 app:met_floatingLabel="highlight"
                 android:id="@+id/parcel_edt"
                 style="@style/search_edittext_view_style"
@@ -67,7 +67,7 @@
 
         </RelativeLayout>
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/name_edt"
             style="@style/search_edittext_view_style"
@@ -80,7 +80,7 @@
             android:textSize="@dimen/text_size18sp"
             />
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/email_edt"
             style="@style/search_edittext_view_style"
@@ -94,7 +94,7 @@
             android:textSize="@dimen/text_size18sp"
             />
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/phone_edt"
             style="@style/search_edittext_view_style"
@@ -108,7 +108,7 @@
             android:textSize="@dimen/text_size18sp"
             />
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/custid_edt"
             style="@style/search_edittext_view_style"
@@ -122,7 +122,7 @@
             android:textSize="@dimen/text_size18sp"
             />
 
-        <com.inerun.dropinsta.fontlib.CustomFontEditText
+        <com.inerun.courier.fontlib.CustomFontEditText
             app:met_floatingLabel="highlight"
             android:id="@+id/invoice_edt"
             style="@style/search_edittext_view_style"
@@ -137,7 +137,7 @@
             android:textSize="@dimen/text_size18sp"
             />
 
-        <com.inerun.dropinsta.fontlib.CustomFontButton
+        <com.inerun.courier.fontlib.CustomFontButton
             android:id="@+id/search_button"
             style="@style/button_view_style"
             android:layout_width="fill_parent"

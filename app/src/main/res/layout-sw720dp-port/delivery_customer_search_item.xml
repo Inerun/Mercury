@@ -20,12 +20,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:scaleX="1.5"
-            android:scaleY="1.5"
+            android:scaleX="1.8"
+            android:scaleY="1.8"
             android:layout_marginRight="5dp"
             android:layout_centerVertical="true"
             android:paddingBottom="@dimen/layout_margin5dp"
             android:paddingRight="@dimen/layout_margin5dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
             />
 
         <TextView
